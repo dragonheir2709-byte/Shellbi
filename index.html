@@ -674,7 +674,7 @@
             const btnText = document.getElementById('submitBtnText');
             const error = document.getElementById('formError');
             error.classList.add('hidden'); btn.disabled = true; btnText.textContent = 'Готовим сообщение...';
-            const message = 'Здравствуйте! Заявка с сайта SHELLBI\\n\\nИмя: ' + name + '\\nКонтакт: ' + contact + '\\nУслуга: ' + service + '\\nЗадача: ' + task;
+            const message = 'Здравствуйте! Заявка с сайта SHELLBI\n\nИмя: ' + name + '\nКонтакт: ' + contact + '\nУслуга: ' + service + '\nЗадача: ' + task;
             try {
                 await navigator.clipboard.writeText(message);
                 window.open('https://t.me/shellbi_ads', '_blank', 'noopener');
