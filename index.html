@@ -677,11 +677,11 @@
             const message = 'Здравствуйте! Заявка с сайта SHELLBI\n\nИмя: ' + name + '\nКонтакт: ' + contact + '\nУслуга: ' + service + '\nЗадача: ' + task;
             try {
                 await navigator.clipboard.writeText(message);
-                window.open('https://t.me/shellbi_ads', '_blank', 'noopener');
+                window.open('https://t.me/shelby_smm', '_blank', 'noopener');
                 document.getElementById('crmLeadForm').classList.add('hidden');
                 document.getElementById('crmSuccessBox').classList.remove('hidden');
             } catch (err) {
-                error.textContent = 'Не удалось скопировать сообщение автоматически. Напишите в Telegram @shellbi_ads и отправьте данные формы вручную.';
+                error.textContent = 'Не удалось скопировать сообщение автоматически. Напишите мне в Telegram @shelby_smm и отправьте данные формы вручную.';
                 error.classList.remove('hidden');
             } finally { btn.disabled = false; btnText.textContent = 'Подготовить заявку в Telegram'; }
         }
